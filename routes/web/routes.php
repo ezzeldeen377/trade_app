@@ -54,6 +54,23 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/storage/{path}', function (string $path) {
+    $file = storage_path('app/public/' . $path);
+    if (!file_exists($file)) {
+        $file = storage_path($path);
+    }
+    if (!file_exists($file)) {
+        abort(404);
+    }
+    $mime = mime_content_type($file);
+    $headers = [
+        'Content-Type' => $mime,
+        'Cache-Control' => 'public, max-age=31536000',
+        'Access-Control-Allow-Origin' => '*',
+    ];
+    return response()->file($file, $headers);
+})->where('path', '.*');
+
 Route::get('/image-proxy', function () {
     $url = request('url');
     if (!$url) {
