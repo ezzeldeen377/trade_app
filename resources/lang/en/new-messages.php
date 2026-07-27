@@ -78,4 +78,6 @@ return [
 	"Order_can_only_be_edited_when_the_order_status_is_Pending_or_Confirmed." => "Order can only be edited when the order status is Pending or Confirmed.",
 	"Set_how_many_times_AI_can_generate_data_from_an_image_upload_in_vendor_panel_or_vendor_app" => "Set how many times AI can generate data from an image upload in vendor panel or vendor app",
 	"Most_Rated_Products" => "Most Rated Products",
+	"Fast_Delivery_all_across_the_country" => "Fast Delivery all across the country",
+	"Discounted_Products" => "Discounted Products",
 ];
