@@ -80,4 +80,8 @@ return [
 	"Most_Rated_Products" => "Most Rated Products",
 	"Fast_Delivery_all_across_the_country" => "Fast Delivery all across the country",
 	"Discounted_Products" => "Discounted Products",
+	"Vendor_Products" => "Vendor Products",
+	"App_Deep_Link_Setup" => "App Deep Link Setup",
+	"website_loader_gif_is_required" => "Website loader gif is required",
+	"website_favicon_is_required" => "Website favicon is required",
 ];
