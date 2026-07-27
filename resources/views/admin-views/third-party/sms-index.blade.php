@@ -274,44 +274,7 @@
                                                value=""
                                                placeholder="{{ translate('01xxxxxxxx') }}">
 
-                                        @if($firebaseOtpVerification && $firebaseOtpVerification['status'])
-                                            <div class="generate-firebase-auth-recaptcha" id="firebase-auth-recaptcha-{{ rand(111, 999) }}"></div>
-                                        @elseif(isset($recaptcha) && $recaptcha['status'] == 1)
-                                            <div class="dynamic-default-and-recaptcha-section">
-                                                <input type="hidden" name="g-recaptcha-response" class="render-grecaptcha-response" data-action="login"
-                                                       data-input="#login-default-captcha-section"
-                                                       data-default-captcha="#login-default-captcha-section"
-                                                >
-
-                                                <div class="default-captcha-container d-none" id="login-default-captcha-section"
-                                                     data-placeholder="{{ translate('enter_captcha_value') }}"
-                                                     data-base-url="{{ route('g-recaptcha-session-store') }}"
-                                                     data-session="{{ 'smsTestRecaptchaSessionKey' }}"
-                                                >
-                                                </div>
-                                            </div>
-                                        @else
-                                            <div class="row mt-2 g-2">
-                                                <div class="col-8">
-                                                    <input type="text" class="form-control form-control-lg form-control-focus-none"
-                                                           id="admin-sms-recaptcha-input"
-                                                           name="default_captcha_value" value="" required
-                                                           placeholder="{{ translate('enter_captcha_value') }}">
-                                                </div>
-                                                <div class="col-4 input-icons bg-white rounded">
-                                                    <a class="get-login-recaptcha-verify cursor-pointer get-recaptcha-session-auto-fill user-select-none"
-                                                       data-link="{{ route('g-recaptcha-session-store') }}"
-                                                       data-session="{{ 'adminSMSRecaptchaSessionKey' }}"
-                                                       data-input="#admin-sms-recaptcha-input"
-                                                    >
-                                                        <img
-                                                            src="{{ route('g-recaptcha-session-store').'?sessionKey=adminSMSRecaptchaSessionKey' }}"
-                                                            class="input-field w-90 h-40 p-0 rounded" id="default_sms_recaptcha_id" alt="">
-                                                        <i class="fi fi-rr-refresh"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        @endif
+                                        {{-- Captcha removed --}}
                                     </div>
                                 </div>
                                <div>
