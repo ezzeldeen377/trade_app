@@ -92,4 +92,8 @@ return [
 	"website_footer_logo_is_required" => "Website footer logo is required",
 	"website_header_logo_mobile_view_field_is_required" => "Website header logo mobile view field is required",
 	"If_you_turn_off_this_vendor_will_not_be_able_to_edit_his_orders" => "If you turn off this vendor will not be able to edit his orders",
+	"Vendor_Products" => "Vendor Products",
+	"App_Deep_Link_Setup" => "App Deep Link Setup",
+	"website_loader_gif_is_required" => "Website loader gif is required",
+	"website_favicon_is_required" => "Website favicon is required",
 ];
