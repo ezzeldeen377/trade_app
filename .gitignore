@@ -26,3 +26,5 @@ temp-data-folder/
 /public/Modules/Gateways
 
 deploy-6valley.zip
+# Secret scanner
+public/assets/back-end/js/theme.min.js
